@@ -1,0 +1,144 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="PHP"
+    WorkingDir=".">
+    <Config
+        Name="Debug"
+        DebugCallbackName="xdebug"
+        Type="php"
+        OutputFile=""
+        CompilerConfigName="">
+        <Menu>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                Dialog="_php_options_form Run"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw"
+                Deletable="0">
+                <Exec
+                    CmdLine="php_execute %(SLICKEDIT_PHP_EXECUTE_ARGS)"
+                    Type="Slick-C"/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                Dialog="_php_options_form Debug"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveNone"
+                RunFromDir="%rw"
+                Deletable="0">
+                <Exec
+                    CmdLine="php_debug"
+                    Type="Slick-C"/>
+            </Target>
+            <Target
+                Name="PHP Options"
+                MenuCaption="PHP &amp;Options"
+                ShowOnMenu="HideIfNoCmdLine"
+                Deletable="0">
+                <Exec
+                    CmdLine="phpoptions"
+                    Type="Slick-C"/>
+            </Target>
+        </Menu>
+        <List Name="PHP Options">
+            <Item
+                Name="AppType"
+                Value="web-local"/>
+            <Item
+                Name="DefaultFile"
+                Value=""/>
+            <Item
+                Name="ScriptArguments"
+                Value=""/>
+            <Item
+                Name="InterpreterArguments"
+                Value=""/>
+            <List Name="Map">
+                <Item
+                    Name="RemoteUrl"
+                    Value="http://devserver"/>
+                <Item
+                    Name="LocalRoot"
+                    Value="/home/gomez/repositories/NoviceToNinja/"/>
+            </List>
+        </List>
+        <List Name="Xdebug Options">
+            <Item
+                Name="ServerHost"
+                Value="127.0.0.1"/>
+            <Item
+                Name="ServerPort"
+                Value="9000"/>
+            <Item
+                Name="ListenInBackground"
+                Value="1"/>
+            <Item
+                Name="StayInDebugger"
+                Value="1"/>
+            <Item
+                Name="AcceptConnections"
+                Value="prompt"/>
+            <Item
+                Name="BreakInSession"
+                Value="step-into"/>
+            <Item
+                Name="show_hidden"
+                Value="1"/>
+            <List Name="Map">
+                <Item
+                    Name="RemoteRoot"
+                    Value="/home/gomez/repositories/NoviceToNinja/"/>
+                <Item
+                    Name="LocalRoot"
+                    Value="/home/gomez/repositories/NoviceToNinja/"/>
+            </List>
+        </List>
+    </Config>
+    <List Name="RTE">
+    </List>
+    <Files AutoFolders="DirectoryView">
+        <Folder Name="web">
+            <Folder Name="admin">
+                <F N="web/admin/accessdenied.html.php"/>
+                <F N="web/admin/login.html.php"/>
+                <F N="web/admin/logout.inc.html.php"/>
+            </Folder>
+            <Folder Name="authors">
+                <F N="web/authors/authors.html.php"/>
+                <F N="web/authors/form.html.php"/>
+                <F N="web/authors/index.php"/>
+            </Folder>
+            <Folder Name="categories">
+                <F N="web/categories/categories.html.php"/>
+                <F N="web/categories/form.html.php"/>
+                <F N="web/categories/index.php"/>
+            </Folder>
+            <Folder Name="includes">
+                <F N="web/includes/access.inc.php"/>
+                <F N="web/includes/db.inc.php"/>
+                <F N="web/includes/error.html.php"/>
+                <F N="web/includes/footer.inc.html.php"/>
+                <F N="web/includes/helpers.inc.php"/>
+                <F N="web/includes/magicquotes.inc.php"/>
+            </Folder>
+            <Folder Name="jokes">
+                <F N="web/jokes/form.html.php"/>
+                <F N="web/jokes/index.php"/>
+                <F N="web/jokes/jokes.html.php"/>
+                <F N="web/jokes/searchform.html.php"/>
+            </Folder>
+            <Folder Name="shoppingcart">
+                <F N="web/shoppingcart/cart.html.php"/>
+                <F N="web/shoppingcart/catalog.html.php"/>
+                <F N="web/shoppingcart/index.php"/>
+            </Folder>
+            <F N="web/index.html"/>
+        </Folder>
+        <F N="README.md"/>
+    </Files>
+</Project>

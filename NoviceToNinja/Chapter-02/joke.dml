@@ -1,0 +1,13 @@
+-- From page 41 & 42
+INSERT INTO joke
+(joketext, jokedate)
+VALUES
+("Why did the chicken cross the road? To get to the other side.", "2012-04-01"),
+("Knock, knock. Who\'s there? Boo !! Boo who, don\'t cry it\'s only a joke!", "2012-04-01"),
+("Two peanuts were crossing the street.  One was a salted, peanut", "2020-05-01"),
+("What did the fish say when it swam into a wall?  Dam!", "2020-05-01"),
+("What is the price of rice in China? It\'s free, just pick it yourself.", "2020-05-01");
+
+-- From page 46, examples for modifying or deleting a row
+-- UPDATE joke SET jokedate WHERE id = "1";
+-- DELETE FROM joke WHERE joketext LIKE "%chicken%";

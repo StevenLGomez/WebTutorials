@@ -1,0 +1,5 @@
+
+# Ignore SlickEdit background files
+*.vpwhist*
+*.vtg
+
