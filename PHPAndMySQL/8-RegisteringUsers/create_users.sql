@@ -1,0 +1,12 @@
+
+CREATE TABLE IF NOT EXISTS users
+	(
+	user_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	first_name VARCHAR(20) NOT NULL,
+	last_name VARCHAR(20) NOT NULL,
+	email VARCHAR(20) NOT NULL,
+	pass VARCHAR(20) NOT NULL,
+	reg_date VARCHAR(20) NOT NULL,
+	PRIMARY KEY (user_id),
+	UNIQUE(email)
+	);
