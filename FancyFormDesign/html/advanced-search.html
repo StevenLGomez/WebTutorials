@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/fancyforms.css" media="screen">
+    </head>
+    <body>
+
+<!-- advanced-search.html excerpt from page 64 -->
+
+    <h1>Advanced Search</h1>
+    <form action="#" method="get">
+    <fieldset>
+    
+        <!-- Search for: -->
+        <div>
+            <label for="words">Search for</label>
+            <select id="words" name="words">
+                <option>All of these words</option>
+                <option>Any of these words</option>
+            </select>
+            <input type="text" name="keywords" value="" id="keywords"/>
+        </div>
+
+        <!-- Search in -->
+        <div>
+            <label for="searchin">Search in</label>
+            <select id="searchin" name="searchin">
+                <option>People</option>
+                <option>Places</option>
+                <option>Sports</option>
+            </select>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <input id="submit" name="submit" type="submit" value="Search"/>
+        </div>
+
+    </fieldset>
+    </form>
+
+    </body>
+</html>
+</!doctype>

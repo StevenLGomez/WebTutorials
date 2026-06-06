@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/fancyforms.css" media="screen">
+    </head>
+    <body>
+
+<!-- privacy-settings.html from page 70-74 -->
+
+    <h1>Privacy Settings</h1>
+    <form action="#" method="get">
+    <fieldset>
+        <p class="introduction">
+            We understand that your health and fitness is personal. We
+            respect your privacy. Please let us know what you would
+            like to be visible.
+        </p>
+
+        <table summary="Profile visibility settings">
+            <thead>
+                <tr>
+                    <th scope="row"></th>
+                    <th abbr="Keep private" class="private" scope="col">Private</th>
+                    <th abbr="Show only to contacts" class="contacts" scope="col">Contacts</th>
+                    <th abbr="Show publicly" class="public" scope="col">Public</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Gender</th>
+                    <td class="private">
+                        <input type="radio" name="gender" id="gender-private" value="private" title="Gender: private" checked="checked"/>
+                    </td>
+                    <td class="contacts">
+                        <input type="radio" name="gender" id="gender-contacts" value="contacts" title="Gender: contacts"/>
+                    </td>
+                    <td class="public">
+                        <input type="radio" name="gender" id="gender-public" value="public" title="Gender: public"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Birth day and month</th>
+                    <td class="private">
+                        <input type="radio" name="dob_date" id="dob-date-private" value="private" title="Birth day: private" checked="checked"/>
+                    </td>
+                    <td class="contacts">
+                        <input type="radio" name="dob_date" id="dob-date-contacts" value="contacts" title="Birth day: contacts"/>
+                    </td>
+                    <td class="public">
+                        <input type="radio" name="dob_date" id="dob-date-public" value="public" title="Birth day: public"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Birth year</th>
+                    <td class="private">
+                        <input type="radio" name="dob_year" id="dob-year-private" value="private" title="Birth year: private" checked="checked"/>
+                    </td>
+                    <td class="contacts">
+                        <input type="radio" name="dob_year" id="dob-year-contacts" value="contacts" title="Birth year: contacts"/>
+                    </td>
+                    <td class="public">
+                        <input type="radio" name="dob_year" id="dob-year-public" value="public" title="Birth year: public"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Location</th>
+                    <td class="private">
+                        <input type="radio" name="location" id="location-private" value="private" title="Location: private" checked="checked"/>
+                    </td>
+                    <td class="contacts">
+                        <input type="radio" name="location" id="location-contacts" value="contacts" title="Location: contacts"/>
+                    </td>
+                    <td class="public">
+                        <input type="radio" name="location" id="location-public" value="public" title="Location: public"/>
+                    </td>
+                </tr>
+
+                <tr class="with-note">
+                    <th scope="row">Fitness journal entries</th>
+                    <td class="private">
+                        <input type="radio" name="entries" id="entries-private" value="private" title="Journal: private" checked="checked"/>
+                    </td>
+                    <td class="contacts">
+                        <input type="radio" name="entries" id="entries-contacts" value="contacts" title="Journal: contacts"/>
+                    </td>
+                    <td class="public">
+                        <input type="radio" name="entries" id="entries-public" value="public" title="Journal: public"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"></th>
+                    <td colspan="3" class="note">This can be changed on a post-by-post basis.</td>
+                </tr>
+
+                <tr class="with-note">
+                    <th scope="row">Your photos</th>
+                    <td class="private">
+                        <input type="radio" name="photos" id="photos-private" value="private" title="Notes: private" checked="checked"/>
+                    </td>
+                    <td class="contacts">
+                        <input type="radio" name="photos" id="photos-contacts" value="contacts" title="Notes: contacts"/>
+                    </td>
+                    <td class="public">
+                        <input type="radio" name="photos" id="photos-public" value="public" title="Notes: public"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row"></th>
+                    <td colspan="3" class="note">This can be changed on a post-by-post basis.</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Your fitness stats</th>
+                    <td class="private">
+                        <input type="radio" name="stats" id="stats-private" value="private" title="Stats: private" checked="checked"/>
+                    </td>
+                    <td class="contacts">
+                        <input type="radio" name="stats" id="stats-contacts" value="contacts" title="Stats: contacts"/>
+                    </td>
+                    <td class="public">
+                        <input type="radio" name="stats" id="stats-public" value="public" title="Stats: public"/>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="controls">
+            <input id="submit" name="submit" type="submit" value="Update Settings"/>
+        </div>
+
+    </fieldset>
+    </form>
+
+    </body>
+</html>
+</!doctype>

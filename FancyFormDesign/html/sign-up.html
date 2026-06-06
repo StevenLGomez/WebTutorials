@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/fancyforms.css" media="screen">
+    </head>
+    <body>
+
+        <!-- sign-up.html excerpt from page 61-63 -->
+        <h1>Sign Up</h1>
+        <p class="log-in">Already a member? <a href="#">Log in</a>.</p>
+        <form action="#" method="post">
+        <fieldset>
+
+            <p class="introduction">
+                Hi there! We're excited to have you as
+                a part of our community. To get started, please create an
+                account.
+            </p>
+
+            <p class="note">
+                Fields marked with an asterisk 
+                (<abbr title= "Required field">*</abbr>) 
+                are required.
+            </p>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Your email address<abbr title="Required field">*</abbr></label>
+                <input type="text" name="email" id="email"/>
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label for="password">Create Password<abbr title="Required field">*</abbr></label>
+                <input type="password" name="password" id="password"/>
+            </div>
+
+            <!-- Password Confirmation -->
+            <div>
+                <label for="password_confirmation">Confirm Password<abbr title="Required field">*</abbr></label>
+                <input type="password" name="password_confirmation" id="password_confirmation"/>
+            </div>
+
+            <!-- Profile Link -->
+            <div id="field-profile-link">
+                <label for="profile_link">Your profile link<abbr title="Required field">*</abbr></label>
+                <span class="profile-link-prefix">fitandawesome.com/</span>
+                <input type="text" name="profile_link" id="profile_link"/>
+            </div>
+
+            <!-- DOB -->
+            <fieldset id="section-dob" class="group">
+            <legend><span>Birth date</span></legend>
+
+            <!-- Month -->
+            <div>
+                <label for="dob_month">Month</label>
+                <select name="dob_month" id="dob_month">
+                    <option value=""> - Month - </option>
+                     ⋮ months
+                </select>
+            </div>
+
+            <!-- Day -->
+            <div>
+                <label for="dob_day">Day</label>
+                <select name="dob_day" id="dob_day">
+                    <option value=""> - Day - </option>
+                    <option value="1">1</option>
+                     ⋮ days
+                </select>
+            </div>
+
+            <!-- Year -->
+            <div>
+                <label for="dob_year">Year</label>
+                <select name="dob_year" id="dob_year">
+                    <option value=""> - Year - </option>
+                    <option value="2004">2004</option>
+                     ⋮ years
+                </select>
+            </div>
+
+            <em class="note">This is hidden by default from your profile.</em>
+            </fieldset>
+
+            <!-- Terms of Service -->
+            <div id="field-agree-tos">
+                <ul>
+                    <li>
+                        <label for="agree_tos">
+                            <input type="checkbox" id="agree_tos" name="agree_tos" value="yes"/>
+                            I have read and agree to the <a href="#">Terms of Service</a>.
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <input id="submit" name="submit" type="submit" value="Create Profile"/>
+            </div>
+
+        </fieldset>
+        </form>
+
+    </body>
+</html>
+</!doctype>
