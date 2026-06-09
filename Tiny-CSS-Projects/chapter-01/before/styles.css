@@ -1,0 +1,77 @@
+
+/*
+body { 
+    color: black;
+}
+
+p {
+    color: blue;
+}
+
+article p {
+    line-height: 2;
+}
+*/
+
+header + p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* pseudo elements */
+header + p::first-letter {
+    font-size: 1.75rem;
+    color: crimson;
+    font-style: italic;
+}
+
+header ~ img {
+    border: 4px solid crimson;
+}
+
+/* Class styles */
+.small-heading {
+    text-transform: uppercase;
+}
+
+/* Links with pseudo classes */
+a:link {
+    color: #1D70B8;
+}
+
+a:visited {
+    color: #4C2C92;
+}
+
+a:hover {
+    color: #003078;
+}
+
+a:focus {
+    outline: solid 1px crimson;
+}
+
+/* Attribute value selector */
+/*
+[lang="it"]::before {
+    content: "IT"
+}
+*/
+
+/*
+.ordered-list > li {
+    color: crimson;
+}
+*/
+
+/* Universal selector */
+* {
+    font-family: sans-seriff;
+}
+
+/* ID id styles */
+#quote-by-author {
+    background: lightgrey;
+    padding: 10px;
+    line-height: 1.75;
+}
