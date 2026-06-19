@@ -97,6 +97,34 @@ foreach ($array as $val)
 	echo "$val <br />";
 }
 
+// Super global variable 
+// GET
+
+$name = $GET['name'];
+echo $name;
+   OR 
+echo #_GET['name'];
+echo " is " . $_GET['age'];
+echo "years old";
+echo " and has " . $_GET['cats'];
+echo " cats";
+
+
+// Forms 
+<form method="GET"
+	<label for="name">Name:</label>
+	<input type="text" name-"name">
+
+	<label for="age">Age:</label>
+	<input type="number" name-"age">
+
+	<button type="submit">Submit></button>;
+
+
+
+
+
+
 
 
 
